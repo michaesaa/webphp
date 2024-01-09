@@ -4,7 +4,7 @@ class Plantilla{
 
     public function ctrPlantilla(){
 
-        include "../vista/plantilla.php";
+        include "vista/plantilla.php";
 
     }
 
