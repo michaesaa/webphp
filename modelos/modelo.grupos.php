@@ -7,9 +7,8 @@ class whatsapp{
     static public function getGruposWsp($tabla){
       
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
-         $stmt->execute();
+            $stmt->execute();
             $result = $stmt->fetchAll();
-            // $stmt->close();
             $stmt = null;
             return $result;
         }

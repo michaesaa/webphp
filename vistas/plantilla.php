@@ -6,7 +6,10 @@ $ruta = "http://localhost/webPHP/vistas/";
 
 $grupos =Controladorwsp::ctrGrupos();
 
-// var_dump($grupos);
+$categoriass =gategorias::ctrCategorias();
+
+
+// var_dump($categoriass);
 
 
 ?>
@@ -14,8 +17,6 @@ $grupos =Controladorwsp::ctrGrupos();
 <!DOCTYPE html>
 <html lang="zxx">
 
-
-<!-- Mirrored from gigaland.io/03_grey-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Oct 2021 00:17:11 GMT -->
 
 <head>
     <title>grupos de wsp y mas </title>
@@ -110,25 +111,33 @@ $grupos =Controladorwsp::ctrGrupos();
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 class="style-2">Hot Collections</h2>
+                            <h2 class="style-2">Grupos Recien Agragados</h2>
                         </div>
                         <div id="collection-carousel-alt" class="owl-carousel wow fadeIn">
 
-                            <div class="nft_coll style-2">
+
+                        <?php 
+                            foreach($grupos as $key => $value){
+
+                                echo'  <div class="nft_coll style-2">
                                 <div class="nft_wrap">
-                                    <a href="03_grey-collection.html"><img src="<?php echo $ruta; ?>images/collections/coll-6.jpg" class="lazy img-fluid" alt=""></a>
+                                    <a href="03_grey-collection.html"><img 
+                                    src="'.$value["wsp_foto"].'"
+                                     class="lazy img-fluid" alt=""></a>
                                 </div>
-                                <div class="nft_coll_pp">
-                                    <a href="03_grey-collection.html"><img class="lazy" src="<?php echo $ruta; ?>images/author/author-6.jpg" alt=""></a>
-                                    <i class="fa fa-check"></i>
-                                </div>
+                           
                                 <div class="nft_coll_info">
                                     <a href="03_grey-collection.html">
-                                        <h4>Papercut</h4>
+                                        <h4>'.$value["wsp_nom"].'</h4>
                                     </a>
-                                    <span>ERC-42</span>
+                                    <span>'.$value["wsp_descrip"].'</span>
                                 </div>
-                            </div>
+                            </div>';
+
+                            }
+                        ?>
+                          
+
 
                         </div>
                     </div>
@@ -142,7 +151,7 @@ $grupos =Controladorwsp::ctrGrupos();
         
 
         </div>
-        <!-- content close -->
+    
 
         <a href="#" id="back-to-top"></a>
 
@@ -173,8 +182,4 @@ $grupos =Controladorwsp::ctrGrupos();
 
 
 </body>
-
-
-<!-- Mirrored from gigaland.io/03_grey-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Oct 2021 00:17:29 GMT -->
-
 </html>
