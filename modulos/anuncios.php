@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="style-2">anuncios hot xxx</h2>
+                <h2 class="style-2">anuncios hot </h2>
             </div>
 
 

@@ -1,18 +1,18 @@
 <?php
 
+require_once "conexion.php";
+
 class mdlAnuncios{
 
 
-static public function mdlAnuncios1($tabla){
+static public function mdlAnuncioss1($tabla){
 
- $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
         $stmt ->execute();
-
-        return $stmt ->fetchAll();
-
+        $result =  $stmt ->fetchAll();
         $stmt = null;
-
+        return $result;
 
 
 }

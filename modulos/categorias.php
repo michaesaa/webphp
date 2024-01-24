@@ -8,8 +8,6 @@
 
     foreach ($categoriass as $key => $value) {
         if (isset($value["cat_nombre"], $value["cat_foto"], $value["cat_decript"])) {
-        
-
             echo '
 
             <div class="nft_pic">

@@ -8,8 +8,10 @@ $grupos =Controladorwsp::ctrGrupos();
 
 $categoriass =gategorias::ctrCategorias();
 
+$anuncios =ctrAnuncios::ctrAnuncioss();
 
-// var_dump($categoriass);
+
+// var_dump($anuncios);
 
 
 ?>
@@ -26,7 +28,6 @@ $categoriass =gategorias::ctrCategorias();
       
     <?php  include "../modulos/inicio.php"?>
     
-
         <a href="#" id="back-to-top"></a>
 
     <?php include "../modulos/footer.php" ?>
