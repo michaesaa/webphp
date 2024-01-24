@@ -13,6 +13,9 @@ $anuncios =ctrAnuncios::ctrAnuncioss();
 
 // var_dump($anuncios);
 
+$url = explode("/", $_GET["ruta"]);
+var_dump($url);
+
 
 ?>
 
@@ -25,6 +28,34 @@ $anuncios =ctrAnuncios::ctrAnuncioss();
 
     <?php include "../modulos/cabecera.php"?>
 
+
+    <?php
+    
+    $url=array();
+    
+    if(isset($_GET["ruta"])){
+
+        $url = explode("/", $_GET["ruta"]);
+
+        if($ruta[0] == "inicio"){
+
+            include "modulos/". $url[0].".php";
+
+
+        }if($url[0] == "gamer" || $url[0] == "stickers" || $url[0] == "dinero"){
+
+            
+            include "../modulos/categorias.php";
+
+        }
+
+
+    }else{
+        include "../modulos/inicio.php";
+    }
+
+    
+    ?>
       
     <?php  include "../modulos/inicio.php"?>
     
