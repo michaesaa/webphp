@@ -11,8 +11,6 @@ static public function mdlAnuncios1($tabla){
 
         return $stmt ->fetchAll();
 
-        $stmt -> close();
-
         $stmt = null;
 
 

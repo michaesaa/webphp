@@ -9,7 +9,7 @@
 
 
                     <?php
-foreach ($categorias as $catess) {
+foreach ($categoriass as $catess) {
 ?>
                     <a href="<?php echo $ruta ?><?php echo $catess["cat_nombre"]; ?>"
                         style="color:#fff;font-weight:500;padding:10px;margin:3px;background-color:green;border-radius:9px; float:left"><?php echo $catess["cat_nombre"]; ?>
