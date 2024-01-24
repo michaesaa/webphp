@@ -99,6 +99,14 @@ $categoriass =gategorias::ctrCategorias();
                                     "'.$value["wsp_descrip"].'"
                                     </div>
 
+
+                                    <div class="menu_side_area">
+                                    <a href=""
+                                    class="btn btn-success btn-lg">
+                                    <span><i class="fa fa-whatsapp" aria-hidden="true"></i> unirse al grupo</span></a>
+                                   <span id="menu-btn"></span>
+                                   </div>
+                                   
                             </div>
                         </div>
                     </div>';
@@ -132,8 +140,20 @@ $categoriass =gategorias::ctrCategorias();
                                     </a>
                                     <span>'.$value["wsp_descrip"].'</span>
                                 </div>
-                            </div>';
+                                
+                                 
+                                    <div class="menu_side_area">
+                                    <a href=""
+                                    class="btn btn-success btn-lg">
+                                    <span><i class="fa fa-whatsapp" aria-hidden="true"></i> unirse al grupo</span></a>
+                                   <span id="menu-btn"></span>
+                                   </div>
+                                   
 
+                         
+
+
+                            </div>';
                             }
                         ?>
                           
